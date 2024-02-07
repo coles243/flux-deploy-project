@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  apptimepy
+  namespace: projects
+spec:
+  selector:
+    app: pypy
+  type:  ClusterIP
+  ports:
+  - protocol: TCP
+    name: http
+    port:  80
+    targetPort:  5000
