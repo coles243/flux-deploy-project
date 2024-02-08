@@ -3,7 +3,4 @@ kind: Kustomization
 bases:
   - ../../application
 
-patches:
-- replicaset.yaml
-
 
